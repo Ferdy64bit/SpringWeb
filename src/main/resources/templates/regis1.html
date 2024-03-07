@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Login Form</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link
+            href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap"
+            rel="stylesheet"
+    />
+    <script
+            src="https://kit.fontawesome.com/e50c83e75c.js"
+            crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<img class="wave" src="img/tr.png" />
+<div class="container">
+    <div class="img">
+        <img src="img/fish.svg" />
+    </div>
+    <div class="login-content">
+        <form action="form/login" method="post">
+            <img src="img/avatar.svg" />
+            <h2 class="title">Welcome The App</h2>
+            <p style="color: red" th:text="${msg}"></p>
+            <div class="input-div one">
+                <div class="i">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="div">
+                    <h5>Email</h5>
+                    <input type="text" class="input" name="email"/>
+                </div>
+            </div>
+            <div class="input-div pass">
+                <div class="i">
+                    <i class="fa-solid fa-lock-open"></i>
+                </div>
+                <div class="div">
+                    <h5>password</h5>
+                    <input
+                            type="password"
+                            class="input password"
+                            id="password"
+                            name="password"
+                    />
+                    <span class="show-hide">
+                <i
+                        class="fa-solid fa-eye-slash"
+                        style="color: #afb4bb"
+                        id="eyeicon1"
+                ></i>
+              </span>
+                </div>
+            </div>
+            <input type="submit" class="btn" value="submit" />
+        </form>
+    </div>
+</div>
+
+
+<script>
+
+</script>
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
